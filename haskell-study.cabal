@@ -17,6 +17,8 @@ source-repository head
 library
   exposed-modules:
       CopyFile
+      HeathrowToLondon
+      ReversePolishNotation
       ToDoList
   other-modules:
       Paths_haskell_study
