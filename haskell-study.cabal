@@ -18,6 +18,7 @@ library
   exposed-modules:
       CopyFile
       HeathrowToLondon
+      MoveKnight
       ReversePolishNotation
       TightropeWalking
       ToDoList
