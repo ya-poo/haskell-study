@@ -19,7 +19,9 @@ library
       CopyFile
       HeathrowToLondon
       MoveKnight
+      Reader
       ReversePolishNotation
+      State
       TightropeWalking
       ToDoList
       Tree
