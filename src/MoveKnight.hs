@@ -1,5 +1,5 @@
 module MoveKnight where
-import Control.Monad (guard)
+import Control.Monad (guard, (<=<))
 
 type KnightPos = (Int, Int)
 
@@ -16,7 +16,7 @@ in3 start = do
     second <- moveKnight first
     moveKnight second
 
-canReachIn3 :: KnightPos -> KnightPos -> Bool 
+canReachIn3 :: KnightPos -> KnightPos -> Bool
 canReachIn3 start end = end `elem` in3 start
 
 traceKnightIn3 :: KnightPos -> KnightPos -> [[KnightPos]]
@@ -26,3 +26,6 @@ traceKnightIn3 start end = do
     third <- moveKnight second
     guard (third == end)
     return [start, first, second, third]
+
+inMany :: Int -> KnightPos -> [KnightPos]
+inMany x = foldr (<=<) return (replicate x moveKnight)
