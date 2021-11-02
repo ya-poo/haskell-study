@@ -19,6 +19,7 @@ library
       CopyFile
       HeathrowToLondon
       MoveKnight
+      Probability
       Reader
       ReversePolishNotation
       State
