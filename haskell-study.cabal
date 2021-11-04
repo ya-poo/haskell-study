@@ -17,6 +17,7 @@ source-repository head
 library
   exposed-modules:
       CopyFile
+      FileSystem
       HeathrowToLondon
       MoveKnight
       Probability
